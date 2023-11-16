@@ -1,0 +1,405 @@
+/* General */
+body {
+    background-color: black;
+}
+section {
+    min-height: 90vh;
+}
+h1, h2, h3 {
+    text-align: center;
+    color: lightgray;
+}
+h1 {
+    font-size: 1.75rem;
+}
+h2 {
+    font-size: 1.33rem;
+}
+h3 {
+    font-size: 1rem;
+}
+p {
+    color: lightgray;
+}
+
+.background {
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* Header */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+
+/* Nav */
+nav {
+    min-height: 10vh; /* Usar la propiedad "height" haría fallar el sistema colapsable que necesita aumentar el alto del elemento */
+}
+nav .h1 {
+    font-size: 1.25rem;
+}
+.nav-item {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    transition-duration: 0.25s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+.nav-item:hover {
+    background-color: rgba(250, 250, 250, 0.25);
+    transition-duration: 0.5s;
+}
+nav ul li a.activo {
+    color:white;
+}
+
+/* Inicio */
+#inicio {
+    width: 100%;
+    padding: 1rem;
+    background-image: url(img/inicio.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    scroll-margin-top: 10vh;
+}
+.contenedor-inicio {
+    width: 90%;
+    padding: 1rem;
+    backdrop-filter: blur(5px);
+    background-color: rgba(120, 120, 120, 0.25);
+    border-radius: 25px;
+}
+.yo {
+    width: 60%;
+    height: auto;
+    border-radius: 25%;
+}
+.mi-nombre {
+    font-size: 1.20rem;
+    color: white;
+}
+.icon-grande {
+    margin: 10px;
+    width: 50px;
+    height: auto;
+    border-radius: 5px;
+}
+.mi-profesion {
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+}
+.frase {
+    font-size: 1.10rem;
+    line-height: 1.1;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+}
+.icono img {
+    width: 15px;
+    height: auto;
+}
+
+/* Sobre mí */
+#sobre-mi {
+    padding: 10vh 0;
+    scroll-margin-top: 9vh;
+}
+.borde-dorado {
+    padding: 10px;
+    border: solid 5px gold;
+    border-radius: 20px;
+}
+#sobre-mi > div {
+    width: 90%;
+}
+#sobre-mi p {
+    text-align: center;
+}
+.softskills > div {
+    position: relative;
+    display: inline-block;
+    width: 75px;
+    margin: 0 15px;
+}
+.softskills img {
+    width: auto;
+    height: 50px;
+}
+.oculto {
+    display: none;
+}
+.cv {
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color:dimgrey;
+    border: solid 4px red;
+    border-radius: 10px;
+}
+.techstack {
+    position: relative;
+    background-image: url(img/techstack2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.techstack img {
+    margin: 7px;
+    width: 60px;
+    height: auto;
+}
+.html {
+    color: orange;
+}
+.css {
+    color: royalblue;
+}
+.bootstrap {
+    color: blueviolet;
+}
+.js {
+    color: yellow;
+}
+.dom {
+    color: slateblue;
+}
+.react {
+    color: aqua;
+}
+.node {
+    color: darkgreen;
+}
+.express {
+    color: white;
+}
+.sql {
+    color: chocolate;
+}
+
+/* Experiencia */
+#experiencia {
+    scroll-margin-top: 10vh;
+}
+#experiencia h2 {
+    color: white;
+}
+.proyectos {
+    padding: 5vh 1rem;
+}
+.proyecto {
+    position: relative;
+    width: 250px;
+    height: 175px;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+.imagen-fondo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.proyecto .proyecto-dtb {
+    background-image: url(img/proyectos/dtb-solutions.png);
+}
+.proyecto .proyecto-utn {
+    background-image: url(img/proyectos/utn-frontend.png);
+}
+.contraste {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.proyecto .text, .curso .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.proyecto .text {
+    text-align: center;
+}
+.tecnologias span {
+    font-size: 0.6rem;
+    padding: 2px;
+    margin: 0 1px;
+    color: black;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+.html {
+    background-color: orange;
+}
+.css {
+    background-color: royalblue;
+}
+.bootstrap {
+    background-color: blueviolet;
+}
+.javascript {
+    background-color: yellow;
+}
+.react {
+    background-color: aqua;
+}
+.node {
+    background-color: darkgreen;
+}
+.express {
+    background-color: white;
+}
+.sql {
+    background-color: chocolate;
+}
+.proyecto p {
+    margin: 1px;
+    color: white;
+}
+.proyecto a {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 8px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.75rem;
+    font-weight: bold;
+    transition: color 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+.proyecto a:hover {
+    color: white;
+    border-color: white;
+    box-shadow: 0 0 5px white;
+    cursor: pointer; cursor: hand;
+}
+.ver {
+    color:blue;
+    border: 4px solid blue;
+}
+.repo {
+    color: darkgreen;
+    border: 4px solid darkgreen;
+}
+.cursos {
+    padding: 5vh 10px;
+}
+.curso {
+    position: relative;
+    width: 250px;
+    height: 275px;
+    margin: 25px auto;
+    overflow: hidden;
+    border: 3px solid rgb(127, 127, 127);
+    border-radius: 20px;
+}
+.curso-utn {
+    background-image: url(img/utn.jpg);
+}
+.curso-platzi {
+    background-image: url(img/platzi.png);
+}
+.curso-fce {
+    background-image: url(img/cambridge.jpg);
+}
+.curso h2 {
+    font-size: 1.05rem;
+}
+.info div {
+    margin: 0 10px 0 0;
+    color: white;
+    font-weight: bold;
+}
+.info .utn {
+    height: 17px;
+    width: auto;
+    padding: 3px;
+    margin-bottom: 2px;
+    background-color: lightgreen;
+    border-radius: 5px;
+}
+.info .platzi {
+    height: 19px;
+    width: auto;
+    padding: 1px;
+    margin-bottom: 4px;
+    border-radius: 5px;
+    background-color: white;
+}
+.info .fce {
+    height: 20px;
+    width: auto;
+    margin-bottom: 2px;
+    border-radius: 5px;
+}
+.curso .aprendizaje {
+    font-size: 0.75rem;
+    line-height: 1;
+}
+.curso .estado {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.completo {
+    color: white;
+    background-color: green;
+}
+.cursando {
+    color: black;
+    background-color: gold;
+}
+
+.todo {
+    background: rgb(255,0,0);
+    background: -moz-linear-gradient(-45deg,  rgba(255,0,0,1) 0%, rgba(255,165,0,1) 15%, rgba(255,255,0,1) 25%, rgba(0,128,0,1) 45%, rgba(0,0,255,1) 70%, rgba(138,43,226,1) 90%);
+    background: -webkit-linear-gradient(-45deg,  rgba(255,0,0,1) 0%,rgba(255,165,0,1) 15%,rgba(255,255,0,1) 25%,rgba(0,128,0,1) 45%,rgba(0,0,255,1) 70%,rgba(138,43,226,1) 90%);
+    background: linear-gradient(135deg,  rgba(255,0,0,1) 0%,rgba(255,165,0,1) 15%,rgba(255,255,0,1) 25%,rgba(0,128,0,1) 45%,rgba(0,0,255,1) 70%,rgba(138,43,226,1) 90%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#8a2be2',GradientType=1 );
+    font-weight: bolder;
+}
+
+/* Footer */
+footer {
+    border-top: 2px solid white;
+    background-color: #212529;
+    padding: 15px;
+}
+footer img:not(.zona-roja) {
+    border-radius: 100%;
+    box-sizing: border-box;
+    width: 40px;
+    height: auto;
+    border: 5px solid rgba(0, 0, 0, 0);
+}
+footer .contrastar {
+    background-color: white;
+}
+.zona-roja {
+    border-radius: 100%;
+    width: 35px;
+    height: auto;
+}

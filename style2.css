@@ -1,0 +1,170 @@
+@media screen and (min-width: 576px) {
+    /* General */
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    .background {
+        padding: 3rem;
+        margin: 3rem;
+        border-radius: 50px;
+    }
+    
+    /* Nav */
+    nav {
+        min-height: 7vh;
+    }
+    nav .h1 {
+        font-size: 1.75rem;
+    }
+    .nav-item {
+        padding: 5px;
+        margin: 0px 10px;
+        font-size: 1.15rem;
+    }
+
+    /* Inicio */
+    .contenedor-inicio {
+        width: 75%;
+        padding: 3rem;
+        margin: 3rem;
+    }
+    .mi-nombre {
+        font-size: 2em;
+    }
+    .icon-grande {
+        width: 75px;
+        margin: 15px;
+    }
+    .mi-profesion {
+        font-size: 1.60rem;
+    }
+    .frase {
+        font-size: 1.4em;
+        line-height: 1.75;
+        font-weight: bold;
+        color: white;
+    }
+
+    /* Sobre mí */
+    .borde-dorado p {
+        font-size: 1.25rem;
+    }
+    .softskills > div {
+        margin: 0 45px;
+    }
+    .softskills img {
+        height: 100px;
+    }
+    .oculto {
+        position: absolute;
+        top: 150px;
+        left: 0;
+        z-index: 1;
+        padding: 1rem;
+        background-color: black;
+        border: 5px solid white;
+        border-radius: 5px;
+        min-width: 500px;
+    }
+    .softskills > div:hover .oculto {
+        display: block;
+    }
+    .cv {
+        font-size: 1.33rem;
+    }
+    .techstack img {
+        width: 100px;
+        margin: 15px;
+    }
+    
+    /* Experiencia */
+    .proyecto {
+        width: 500px;
+        height: 300px;
+        margin: 20px;
+    }
+    .text {
+        top: 25%;
+        left: 25%;
+        transform: translate(-12%, -12%);
+    }
+    .proyecto h2 {
+        font-size: 3rem;
+    }
+    .tecnologias span {
+        display: inline-block;
+        font-size: 0.8rem;
+        padding: 5px;
+        margin: 3px 2px;
+    }
+    .proyecto p {
+        font-size: 1.25rem;
+        margin: 5px;
+    }
+    .proyecto a {
+        padding: 10px;
+        margin: 15px;
+        border-radius: 10px;
+        font-size: 1rem;
+    }
+    .curso {
+        width: 80%;
+        height: 350px;
+        border: 3px solid rgb(127, 127, 127);
+    }
+    .curso h2 {
+        font-size: 1.5rem;
+    }
+    .info div {
+    margin: 0 25px 10px 0;
+    font-size: 1.25rem;
+    }
+    .info .utn {
+        height: 24px;
+        padding: 5px;
+    }
+    .info .platzi {
+        height: 27px;
+        padding: 3px;
+    }
+    .info .fce {
+        height: 28px;
+    }
+    .curso .aprendizaje {
+        font-size: 1rem;
+        line-height: 1.25;
+    }
+    .curso .estado {
+    font-size: 1.25rem;
+    padding: 8px;
+    margin: 15px;
+}
+
+    /* Footer */
+    footer a {
+        margin: 10px 0;
+    }
+    footer img:not(.zona-roja) {
+        width: 65px;
+    }
+    footer img:not(.zona-roja):hover {
+        border: 5px solid gold;
+    }
+    
+    footer .contrastar {
+        width: 60px;
+    }
+    .zona-roja {
+        width: 60px;
+        transition: box-shadow 1s;
+    }
+    .zona-roja:hover {
+        box-shadow: 0 0 50px 25px red;
+    }
+}

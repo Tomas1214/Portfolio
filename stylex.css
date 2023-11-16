@@ -1,0 +1,21 @@
+body {
+    background-color: black;
+}
+body > div {
+    height: 90vh;
+}
+div > div {
+    width: 50%;
+}
+
+img {
+    width: 50%;
+    height: auto;
+    border: 2px solid white;
+    border-radius: 25px;
+    margin: 20px
+}
+
+p {
+    color: white;
+}
